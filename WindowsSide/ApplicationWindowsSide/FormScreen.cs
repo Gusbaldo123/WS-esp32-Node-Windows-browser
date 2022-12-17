@@ -14,8 +14,8 @@ namespace ApplicationWindowsSide
         }
 
         WebSocket ws;
-        string credentials = "\"clientCredentials\":{\"Device\":\"Computer1\",\"IP\":\"192.168.15.13\",\"Identifier\":\"ChompPanel\"}";
-        string connection = "ws://localhost:8080";
+        string credentials = "\"clientCredentials\":{\"Device\":\"Computer1\",\"IP\":\"YOUR_ADDRESS\",\"Identifier\":\"ChompPanel\"}";
+        string connection = "ws://localhost:8080";//SERVER_ADDRESS
         private void Form1_Load(object sender, EventArgs e)
         {
             UpdateButtons();

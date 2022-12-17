@@ -1,7 +1,7 @@
 <!DOCTYPE html>
     <head>
         <script>
-            var webSocket = new WebSocket('ws://localhost:8080');
+            var webSocket = new WebSocket('ws://localhost:8080');//SERVER_ADDRRESS
             webSocket.onmessage = function(e) 
             {
                 if(e.data == "clientLoginRequest")
