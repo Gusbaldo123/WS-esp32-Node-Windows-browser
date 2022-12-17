@@ -1,0 +1,20 @@
+module.exports = {
+    clientTerminate: function (ws, clientLogin) 
+    {
+        if(clientLogin.Device == "Computer1")
+        {
+            console.log("Computer1 deslogou");
+            sockets.Computer1 = null;
+        }
+        else if(clientLogin.Device == "Browser")
+        {
+            console.log("Browser deslogou");
+            sockets.Browser1 = null;
+        }
+        else if(clientLogin.Device == "ESP32")
+        {
+            console.log("ESP32 deslogou");
+            sockets.Arduino1 = null;
+        }
+    }
+}

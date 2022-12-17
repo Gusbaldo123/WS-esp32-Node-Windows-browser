@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+    <head>
+        <script>
+            var webSocket = new WebSocket('ws://localhost:8080');
+            webSocket.onmessage = function(e) 
+            {
+                if(e.data == "clientLoginRequest")
+                {
+                    let json = `{"clientCommand":"clientLogin","clientCredentials": {"Device":"Chrome","IP":"192.168.15.13","Identifier":"Browser"}}`;
+                    webSocket.send(`{"clientCommand":"clientLogin","clientCredentials": {"Device":"Chrome","IP":"192.168.15.13","Identifier":"Browser"}}`);
+                }
+                //webSocket.send(`{"clientCommand":"Arduno1LigarLuz","clientCredentials": {"Device":"Chrome","IP":"192.168.15.13","Identifier":"Browser"}}`);
+            }
+            
+            function click()
+            {
+                webSocket.send(`{"clientCommand":"Arduno1LigarLuz","clientCredentials": {"Device":"Chrome","IP":"192.168.15.13","Identifier":"Browser"}}`);
+            }
+        </script>
+    </head>
+	<body>
+		<form method="post">
+            <input type="text" name="nome" id="id">
+            <input type="submit" value="Submit" />
+        </form>
+	</body>
+</html>

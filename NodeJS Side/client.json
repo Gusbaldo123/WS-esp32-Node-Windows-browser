@@ -1,0 +1,9 @@
+
+{
+    "clientCommand":"command",
+    "clientCredentials": {
+        "Device":"PC",
+        "IP":"192.168.15.13",
+        "Identifier":"ChompPanel"
+    }
+}

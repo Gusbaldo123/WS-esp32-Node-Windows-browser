@@ -1,0 +1,14 @@
+{
+  "name": "chompbot",
+  "version": "2.0.0",
+  "description": "projeto chomp smarthouse",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "gusbaldo",
+  "dependencies": {
+    "socket.io": "^4.5.1",
+    "ws": "^8.8.0"
+  }
+}
